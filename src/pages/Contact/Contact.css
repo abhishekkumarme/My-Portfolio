@@ -1,0 +1,118 @@
+.contact {
+  margin: 50px 0;
+  margin-left: 130px;
+  margin-bottom: 60px;
+  padding: 50px 30px;
+  background-color: rgba(128, 128, 128, 0.101); /* match About section */
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card0 {
+  box-shadow: none;
+  border-radius: 10px;
+  background: transparent; /* to inherit contact bg */
+}
+
+.card2 {
+  margin: 0px 40px;
+  background: transparent; /* match form part with contact background */
+}
+
+.card1 .image {
+  padding: 30px;
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.border-line {
+  border-right: 2px solid #138781;
+}
+
+.line {
+  height: 2px;
+  width: 45%;
+  background-color: #138781;
+  margin-top: 10px;
+}
+
+.or {
+  display: flex;
+  width: 10%;
+  font-weight: bold;
+  color: #138781;
+}
+
+::placeholder {
+  color: #1b1a1a;
+  opacity: 1;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top: 2px;
+  width: 100%;
+  color: #138781;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: 1px solid #138781 !important;
+}
+
+.button {
+  background-color: #138781;
+  color: white;
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #06423f;
+  color: white;
+}
+
+/* ===== DARK MODE ===== */
+#dark .contact {
+  background-color: rgba(255, 255, 255, 0.07);
+  box-shadow: none;
+}
+
+#dark .card2 {
+  background: transparent;
+}
+
+/* ======================== */
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 0px;
+  }
+
+  .contact .card2 {
+    margin: 0;
+  }
+
+  .contact .card2 h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #138781 !important;
+  }
+  #dark .contact .card2 h6 {
+  color: #138781 !important;
+}
+}

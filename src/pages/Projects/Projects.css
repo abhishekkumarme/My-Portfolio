@@ -1,0 +1,102 @@
+.project {
+  padding: 100px 0px;
+  margin: 50px 0px;
+  margin-left: 140px;
+  border-radius: 25px;
+  background-color: rgba(128, 128, 128, 0.101);
+  max-width: calc(100% - 120px);
+  overflow-x: hidden;
+}
+
+.project hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.project h2 {
+  font-weight: bold;
+  color: #138781;
+}
+
+.card-notify-badge {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: #f29f67;
+  text-align: center;
+  border-radius: 30px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.project .card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-detail-badge {
+  background-color: #e0b50f;
+  text-align: center;
+  border-radius: 30px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.card-description p {
+  margin: 5px 0;
+}
+
+.project .card:hover {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  transition: all 0.5s ease;
+}
+
+.ad-btn {
+  text-transform: uppercase;
+  padding: 6px 16px;
+  background-color: #138781;
+  color: white;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.ad-btn:hover {
+  background-color: white;
+  color: #138781;
+  border: 2px solid #138781;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+/* =============================== */
+@media (max-width: 600px) {
+  .project {
+    margin: 0;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .project hr {
+    width: 280px;
+  }
+
+.project .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+}
